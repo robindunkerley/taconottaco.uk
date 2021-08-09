@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+html {
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;;
+}
+
+body {
+  background-color: #fffaf0;
+  margin: 0;
+}
+
+/* NAVBAR */
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #579564;
+  text-align: center;
+  margin: 5%;
+  height: 650px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+nav span {
+    font-size: 5rem;
+    margin: 10px 0px;
+    color: white;
+}
+
+a.link {
+  text-decoration: none;
+  text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.logo-container {
+  margin: 4%;
+}
+
+.logo {
+    display: block;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.icon {
+  height: 30px;
+  margin: 0 20px;
+}
+
+.icon-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+ /*CAROUSEL*/
+
+.carousel {
+  display: border-box;
+  background: #EEE;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  height: 600px;
+  margin: 5% 0;
+}
+
+.carousel-cell {
+  width: 50%;
+  height: 600px;
+  margin: 0 2px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.carousel-cell img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.flickity-page-dots {
+  margin-bottom: 2%;
+}
+
+ /*DESCRIPTION*/
+
+ #logo-2 {
+   height: 100px;
+   width: 100px;
+ }
+
+ .description {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   height: 400px;
+   margin: 5%;
+   background-color: rgba(255, 166, 0, 0.164);
+   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+   font-size: 1.75em;
+ }
+
+ .description p {
+   margin: 2%;
+  padding: 0% 4%;
+  font-family: 'Poppins', sans-serif;;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: blanchedalmond;
+ }
+ 
+
+ /*BOOKINGS*/
+
+ .bookings {
+
+   background-size: cover;
+   height: 400px;
+   margin: 5%;
+   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+ }
+
+ .bookings-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.342);;
+ }
+
+ .bookings h1 {
+   color: white;
+   margin: 2% 0 3% 0
+ }
+
+ button {
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  padding: .5rem 1rem;
+  background: rgba(247, 244, 244, 0.233);
+}
+
+button:hover {
+  background: rgba(247, 244, 244, 0.075);
+}
+
+button:active {
+ background: rgba(167, 233, 182, 0.5)
+}
+
+
+/* Style the container */
+
+/* Style inputs, select elements and textareas */
+#close {
+  display: block;
+  height: 20px;
+  width: 20px;
+  float: right;
+}
+
+input, select, textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin: 5% 0;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    max-height: 100px;
+    max-width: 100%;
+    min-width: 100%;
+    padding-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 45px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  }
+
+  input {
+    padding: 5px;
+    padding-left: 10px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  }
+
+  input[type=submit] {
+    margin-top: 20px;
+    background-color: #579564;
+    height: 40px;
+    cursor: pointer;
+    font-weight: 900;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  }
+
+.input-container input, textarea {
+margin: 5% 0;
+}
+
+.iconButton {
+  position: relative;
+  bottom: 10px;
+  left: 10px;
+  text-align: right;
+}
+
+
+.booking-header {
+ text-align: center;
+ margin-bottom: 10%;
+ font-size: 1.5em;
+ font-weight: bold;
+}
+
+#booking-button-container {
+  text-align: center;
+}
+
+
+@media screen and ( max-width: 768px ) {
+  /* Adjustments for Phones */
+  nav {
+    height: 400px;
+  }
+
+  .logo {
+    height: 175px;
+    width: 175px;
+  }
+
+  .icon {
+    height: 23px;
+  }
+
+  .icon-container {
+    margin-top: 5%;
+  }
+
+  .carousel { 
+    height: 400px;
+    margin-bottom: 5%;
+  }
+  .carousel-cell {
+    height: 400px;
+    width: 90%;
+  }
+
+  .carousel-cell img {
+    height: 400px;
+  }
+
+  .flickity-button {
+    display: none;
+  }
+
+  .flickity-button-icon {
+    display: none;
+  }
+
+  .description {
+    margin-top: 8%;
+  }
+  nav, .description, .bookings, .bookings-overlay {
+    border-radius: 35px;
+  }
+}
