@@ -1,13 +1,15 @@
 import React, {useState} from 'react';
 import Modal from 'react-modal';
 import Button1 from './Button'
-import { Formik, Form, ErrorMessage } from "formik";
-import { Button } from '@material-ui/core';
+import { Formik, Form, ErrorMessage, useFormik } from "formik";
+import { Button, CircularProgress } from '@material-ui/core';
 import HighlightOffIcon from '@material-ui/icons/HighlightOff';
 import IconButton from '@material-ui/core/IconButton';
 import * as Yup from 'yup';
 import Input from './Input';
 import Textarea from './Textarea';
+import emailjs from "emailjs-com";
+
 
 
 //Imported Images
@@ -17,11 +19,13 @@ import closeIcon from '../images/closeIcon.png';
 import '../style.css';
 
 Modal.setAppElement('#root');
+emailjs.init('user_nFMNVSW7vSQXsqOOoX8so');
 
 const Bookings = (props) => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
     const validate = Yup.object({
+        name: Yup.string().required('Required'),
         email: Yup.string().email('Email is invalid').required('Required'),
         date: Yup.date().required("Required").nullable(),
     })
@@ -37,13 +41,19 @@ const Bookings = (props) => {
                 
                 
                 <Formik
-                initialValues={{ email: "", date: "", message: "" }}
+                initialValues={{ name: "", email: "", date: "", message: "" }}
 
-                onSubmit={(data, {setSubmitting}) => {
+                onSubmit={(formData, {setSubmitting, resetForm}) => {
                     setSubmitting(true);
-                    console.log(data);
-                    setSubmitting(false);
+                    emailjs.send('service_vzyxqa3', 'template_jlb9a36', formData)
+                    .then(resetForm)
+                    .catch(error => {
+                        console.log(error)
+                    }).finally(() => {
+                        setSubmitting(false);
+                    })
                 }}
+
 
                 validationSchema={validate}
                 >
@@ -58,8 +68,16 @@ const Bookings = (props) => {
                     </div>
                         
                     <div className="booking-header">
-                    <span>Bookings</span>
+                    <span>Booking Enquiries</span>
                     </div>
+                        <ErrorMessage name="name" />
+                        <Input                         
+                        name="name"
+                        placeholder="Name"
+                        value={values.name}
+                        onChange={handleChange}
+                        onBlur={handleBlur} 
+                        />
                         <ErrorMessage name="email" />
                         <Input                         
                         name="email"
@@ -85,7 +103,11 @@ const Bookings = (props) => {
                         cols="5" rows="5" 
                         />
                     <div id="booking-button-container">
-                        <Button disabled={isSubmitting} type="submit">Submit</Button>
+                        <Button disabled={isSubmitting} 
+                                endIcon={isSubmitting ? <CircularProgress size={10} color='inherit' /> : null} 
+                                type="submit"
+                                >Submit
+                                </Button>
                     </div>
                 </Form>
 

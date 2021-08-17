@@ -263,6 +263,7 @@ margin: 5% 0;
 
   .carousel-cell img {
     height: 400px;
+    object-fit: cover;
   }
 
   .flickity-button {

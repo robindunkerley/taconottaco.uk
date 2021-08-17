@@ -9,12 +9,10 @@ import Carousel from './Components/Carousel';
 import Bookings from './Components/Bookings';
 import Block from './Components/Description';
 import BlockFactory from './Components/BlockFactory';
-import Form from './Components/Form';
 
 //import css
 import './style.css';
 import './flickity.css';
-
 
 function App() {
   return (
@@ -27,7 +25,6 @@ function App() {
       <Carousel />
       <BlockFactory />
       <Bookings />
-      <Carousel />
     </div>
   );
 }
