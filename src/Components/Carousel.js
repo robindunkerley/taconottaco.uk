@@ -16,9 +16,17 @@ function Carousel() {
       options={flickityOptions} // takes flickity options {}
       disableImagesLoaded={false} // default false
     >
-      <img className='carousel-cell' src={Taco1} alt="Korean deepfried cauliflower taco" />
-      <img className='carousel-cell' src={Taco2} alt="Pork belly taco with crackling" />
-      <img className='carousel-cell' src={Taco3} alt="Beef taco with beetroot" />
+      <div className='carousel-cell'>
+        <img className='carousel-cell-img' src={Taco1} alt="Korean deepfried cauliflower taco" />
+      </div>
+
+      <div className='carousel-cell'>
+        <img className='carousel-cell-img' src={Taco2} alt="Pork belly taco with crackling" />
+      </div>
+
+      <div className='carousel-cell'>
+        <img className='carousel-cell-img' src={Taco3} alt="Beef taco with beetroot" />
+      </div>
     </Flickity>
   )
 }
