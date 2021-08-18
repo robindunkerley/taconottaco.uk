@@ -4,7 +4,6 @@ import Taco2 from '../images/Taco2.jpg';
 import Taco3 from '../images/Taco3.jpg';
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import { useMediaPredicate } from "react-media-hook";
 
 
 
