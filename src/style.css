@@ -62,33 +62,76 @@ a.link {
 }
 
  /*CAROUSEL*/
+.keen-slider__slide {
+  background: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: #fff;
+  font-weight: 500;
+  height: 600px;
+  max-height: 100vh;
+  width: 1000px;
+}
 
-.carousel {
-  display: border-box;
-  background: #EEE;
+.keen-slider {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-  height: 600px;
-  margin: 5% 0;
 }
 
-.carousel-cell {
-  width: 50%;
-  height: 600px;
-  margin: 0 2px;
-  border-radius: 5px;
-  overflow: hidden;
 
-}
-
-.carousel-cell-img {
+.carousel-img {
+  object-fit: cover;
   width: 100%;
   height: 600px;
-  object-fit: cover;
 }
 
-.flickity-page-dots {
-  margin-bottom: 2%;
+.dots {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
 }
+
+.dot {
+  border: none;
+  width: 10px;
+  height: 10px;
+  background: #c5c5c5;
+  border-radius: 50%;
+  margin: 0 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.dot.active {
+  background: #000;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  fill: #fff;
+  cursor: pointer;
+}
+
+.arrow--left {
+  left: 5px;
+}
+
+.arrow--right {
+  right: 5px;
+}
+
+
+
 
  /*DESCRIPTION*/
 
@@ -253,26 +296,8 @@ margin: 5% 0;
     margin-top: 5%;
   }
 
-  .carousel { 
-    height: 400px;
-    margin-bottom: 5%;
-  }
-  .carousel-cell {
-    height: 400px;
-    width: 90%;
-  }
-
-  .carousel-cell img {
-    height: 400px;
-    object-fit: cover;
-  }
-
-  .flickity-button {
-    display: none;
-  }
-
-  .flickity-button-icon {
-    display: none;
+  .keen-slider__slide{
+    height: 500px;
   }
 
   .description {
