@@ -1,0 +1,30 @@
+@media screen and ( max-width: 768px ) {
+    /* Adjustments for Phones */
+    nav {
+      height: 400px;
+    }
+  
+    .logo {
+      height: 175px;
+      width: 175px;
+    }
+  
+    .icon {
+      height: 23px;
+    }
+  
+    .icon-container {
+      margin-top: 5%;
+    }
+  
+    .navigation-wrapper, .keen-slider__slide{
+      height: 500px;
+    }
+  
+    .description {
+      margin-top: 8%;
+    }
+    nav, .description, .bookings, .bookings-overlay {
+      border-radius: 35px;
+    }
+  }
