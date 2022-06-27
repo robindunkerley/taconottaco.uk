@@ -1,28 +1,31 @@
 {
   "files": {
-    "main.css": "/taconottaco.uk/static/css/main.9655b9e0.chunk.css",
-    "main.js": "/taconottaco.uk/static/js/main.2ea081d3.chunk.js",
-    "main.js.map": "/taconottaco.uk/static/js/main.2ea081d3.chunk.js.map",
-    "runtime-main.js": "/taconottaco.uk/static/js/runtime-main.a3492374.js",
-    "runtime-main.js.map": "/taconottaco.uk/static/js/runtime-main.a3492374.js.map",
-    "static/js/2.889a3692.chunk.js": "/taconottaco.uk/static/js/2.889a3692.chunk.js",
-    "static/js/2.889a3692.chunk.js.map": "/taconottaco.uk/static/js/2.889a3692.chunk.js.map",
-    "static/js/3.2b76f5a5.chunk.js": "/taconottaco.uk/static/js/3.2b76f5a5.chunk.js",
-    "static/js/3.2b76f5a5.chunk.js.map": "/taconottaco.uk/static/js/3.2b76f5a5.chunk.js.map",
-    "index.html": "/taconottaco.uk/index.html",
-    "static/css/main.9655b9e0.chunk.css.map": "/taconottaco.uk/static/css/main.9655b9e0.chunk.css.map",
-    "static/js/2.889a3692.chunk.js.LICENSE.txt": "/taconottaco.uk/static/js/2.889a3692.chunk.js.LICENSE.txt",
-    "static/media/COLOURWAY 2.37cd5247.png": "/taconottaco.uk/static/media/COLOURWAY 2.37cd5247.png",
-    "static/media/MONO BLACK.335500a4.png": "/taconottaco.uk/static/media/MONO BLACK.335500a4.png",
-    "static/media/Taco1.16b16842.jpg": "/taconottaco.uk/static/media/Taco1.16b16842.jpg",
-    "static/media/Taco2.9b78100f.jpg": "/taconottaco.uk/static/media/Taco2.9b78100f.jpg",
-    "static/media/Taco3.29e9b653.jpg": "/taconottaco.uk/static/media/Taco3.29e9b653.jpg",
-    "static/media/VanTop.05c03fe9.jpg": "/taconottaco.uk/static/media/VanTop.05c03fe9.jpg"
+    "main.css": "./static/css/main.ba252239.chunk.css",
+    "main.js": "./static/js/main.96f20612.chunk.js",
+    "main.js.map": "./static/js/main.96f20612.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.9df177e0.js",
+    "runtime-main.js.map": "./static/js/runtime-main.9df177e0.js.map",
+    "static/css/2.bded3b46.chunk.css": "./static/css/2.bded3b46.chunk.css",
+    "static/js/2.fa80ea75.chunk.js": "./static/js/2.fa80ea75.chunk.js",
+    "static/js/2.fa80ea75.chunk.js.map": "./static/js/2.fa80ea75.chunk.js.map",
+    "static/js/3.95aa3192.chunk.js": "./static/js/3.95aa3192.chunk.js",
+    "static/js/3.95aa3192.chunk.js.map": "./static/js/3.95aa3192.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/2.bded3b46.chunk.css.map": "./static/css/2.bded3b46.chunk.css.map",
+    "static/css/main.ba252239.chunk.css.map": "./static/css/main.ba252239.chunk.css.map",
+    "static/js/2.fa80ea75.chunk.js.LICENSE.txt": "./static/js/2.fa80ea75.chunk.js.LICENSE.txt",
+    "static/media/COLOURWAY 2.37cd5247.png": "./static/media/COLOURWAY 2.37cd5247.png",
+    "static/media/MONO BLACK.335500a4.png": "./static/media/MONO BLACK.335500a4.png",
+    "static/media/Taco1.16b16842.jpg": "./static/media/Taco1.16b16842.jpg",
+    "static/media/Taco2.9b78100f.jpg": "./static/media/Taco2.9b78100f.jpg",
+    "static/media/Taco3.29e9b653.jpg": "./static/media/Taco3.29e9b653.jpg",
+    "static/media/VanTop.05c03fe9.jpg": "./static/media/VanTop.05c03fe9.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a3492374.js",
-    "static/js/2.889a3692.chunk.js",
-    "static/css/main.9655b9e0.chunk.css",
-    "static/js/main.2ea081d3.chunk.js"
+    "static/js/runtime-main.9df177e0.js",
+    "static/css/2.bded3b46.chunk.css",
+    "static/js/2.fa80ea75.chunk.js",
+    "static/css/main.ba252239.chunk.css",
+    "static/js/main.96f20612.chunk.js"
   ]
 }
